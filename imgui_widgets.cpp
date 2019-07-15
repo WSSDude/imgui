@@ -4099,10 +4099,11 @@ bool ImGui::InputTextEx(const char* label, const char* hint, char* buf, int buf_
         MarkItemEdited(id);
 
     IMGUI_TEST_ENGINE_ITEM_INFO(id, label, window->DC.ItemFlags);
-    if ((flags & ImGuiInputTextFlags_EnterReturnsTrue) != 0)
-        return enter_pressed;
-    else
-        return value_changed;
+    //if ((flags & ImGuiInputTextFlags_EnterReturnsTrue) != 0)
+    //    return enter_pressed;
+    //else
+    //    return value_changed;
+    return value_changed;
 }
 
 //-------------------------------------------------------------------------
